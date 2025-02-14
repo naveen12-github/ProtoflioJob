@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import Typical from "react-typical";
-import profileImage from "../images/naveen1.png";
+import ReactTypingEffect from "react-typing-effect"; // Correct import
+import profileImage from "../images/naveen1.png"; // Move to the top
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -40,12 +40,16 @@ const Home = () => {
             variants={textVariants}
             transition={{ delay: 0.7 }}
           >
-            I'm a{' '}
+            I'm a{" "}
             <span className="text-blue-400">
-              <Typical
-                steps={["Full Stack Developer", 2000, "MERN Stack Developer", 2000, "Content Creator", 2000]}
-                loop={Infinity}
-                wrapper="span"
+              <ReactTypingEffect
+                text={[
+                  "Full Stack Developer",
+                  "MERN Stack Developer",
+                  "Content Creator",
+                ]}
+                speed={100}
+                eraseDelay={2000}
               />
             </span>
           </motion.h2>
@@ -57,7 +61,8 @@ const Home = () => {
             variants={textVariants}
             transition={{ delay: 1 }}
           >
-            Transforming Ideas into Functional Web Solutions: Bridging Creativity and Full-Stack Excellence
+            Transforming Ideas into Functional Web Solutions: Bridging
+            Creativity and Full-Stack Excellence
           </motion.p>
 
           {/* Social Media Icons */}
@@ -67,13 +72,22 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.2 }}
           >
-            <a href="https://www.linkedin.com/in/a-naveen-b1ab62274/" className="text-white hover:text-blue-400 text-2xl transition-transform duration-500 hover:scale-110">
+            <a
+              href="https://www.linkedin.com/in/a-naveen-b1ab62274/"
+              className="text-white hover:text-blue-400 text-2xl transition-transform duration-500 hover:scale-110"
+            >
               <FaLinkedin />
             </a>
-            <a href="https://github.com/naveen12-github" className="text-white hover:text-gray-300 text-2xl transition-transform duration-500 hover:scale-110">
+            <a
+              href="https://github.com/naveen12-github"
+              className="text-white hover:text-gray-300 text-2xl transition-transform duration-500 hover:scale-110"
+            >
               <FaGithub />
             </a>
-            <a href="naveencse4321@gmail.com" className="text-white hover:text-red-400 text-2xl transition-transform duration-500 hover:scale-110">
+            <a
+              href="mailto:naveencse4321@gmail.com"
+              className="text-white hover:text-red-400 text-2xl transition-transform duration-500 hover:scale-110"
+            >
               <FaEnvelope />
             </a>
           </motion.div>
