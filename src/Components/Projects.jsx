@@ -13,7 +13,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="min-h-screen px-6 py-12 bg-[#0B1120] text-white">
+    <section id="projects" className="min-h-screen px-6 py-12 bg-[#0B1120] text-white">
       <div className="container mx-auto text-center">
         <h1 className="text-4xl font-bold">
           My <span className="text-blue-400">Projects</span>

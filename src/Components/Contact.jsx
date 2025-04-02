@@ -15,7 +15,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen px-6 py-12 bg-[#0B1120] flex items-center">
+    <section  id="contact" className="min-h-screen px-6 py-12 bg-[#0B1120] flex items-center">
       <div className="container mx-auto max-w-lg">
         {/* Animated Heading */}
         <motion.h1

@@ -1,15 +1,16 @@
 import React from "react";
+import mernImage from "../images/mern.jpeg";
+import javaImage from "../images/java.jpeg";
 
 const certificates = [
-  { title: "React Developer Certificate", image: "/images/react-cert.png", link: "https://your-react-cert-link.com" },
-  { title: "Frontend Development Certification", image: "/images/frontend-cert.png", link: "https://your-frontend-cert-link.com" },
-  { title: "JavaScript Mastery Certificate", image: "/images/js-cert.png", link: "https://your-js-cert-link.com" },
-  { title: "Web Design Certification", image: "/images/webdesign-cert.png", link: "https://your-webdesign-cert-link.com" }
+  { title: " Mern Fullstack developer", image:  mernImage , link: "https://your-react-cert-link.com" },
+  { title: "Java Fullstack developer", image: javaImage , link: "https://your-frontend-cert-link.com" },
+
 ];
 
 const Certificates = () => {
   return (
-    <section className="min-h-screen px-6 py-12 bg-[#0B1120] text-white">
+    <section  id="certificates" className="min-h-screen px-6 py-12 bg-[#0B1120] text-white">
       <div className="container mx-auto text-center">
         <h1 className="text-4xl font-bold">
           My <span className="text-blue-400">Certificates</span>

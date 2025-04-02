@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="min-h-screen px-6 py-1 bg-[#0B1120] flex items-center">
+    <section  id="about" className="min-h-screen px-6 py-1 bg-[#0B1120] flex items-center">
       <div className="container mx-auto">
         {/* Animated Heading */}
         <motion.h1

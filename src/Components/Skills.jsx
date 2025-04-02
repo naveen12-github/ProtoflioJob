@@ -28,7 +28,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="min-h-screen px-6 py-12 bg-[#0B1120] text-white">
+    <section id="skills" className="min-h-screen px-6 py-12 bg-[#0B1120] text-white">
       <div className="container mx-auto">
         {/* Heading */}
         <h1 className="text-4xl font-bold text-center">
